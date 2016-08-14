@@ -11,7 +11,7 @@
     },
     "UI-Bootstrap Modal Open": {
         "prefix": "uib-modal-open",
-        "body": "$uibModal.open({\n\ttemplateUrl: '${1:modal.html}',\n\tcontroller: '${2:ModalCtrl}',\n\tanimation: ${3:true},\n\tsize: '${4:lg|sm}',\n\tresolve: {\n\t\t${5:items: function () {\n\t\t\treturn $scope.items;\n\t\t}}\n\t}\n}).result\n.then(function (${6:selectedItem}) {\n\t$7\n})\n.catch(function () {\n\t${8:// Modal dismissed.}\n});$9",
+        "body": "$uibModal.open({\n\ttemplateUrl: '${1:modal.html}',\n\tcontroller: '${2:ModalCtrl}',\n\tanimation: ${3:true},\n\tsize: '${4:lg|sm}',\n\tresolve: {\n\t\t${5:items}: function () {\n\t\t\treturn $scope.items;\n\t\t}\n\t}\n}).result\n.then(function (${6:selectedItem}) {\n\t$7\n})\n.catch(function () {\n\t${8:// Modal dismissed.}\n});$9",
         "description": "UI-Bootstrap Modal Open"
     },
     "UI-Bootstrap Modal Dismiss": {
