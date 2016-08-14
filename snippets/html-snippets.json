@@ -1,0 +1,242 @@
+{
+    "UI-Bootstrap Accordion": {
+        "prefix": "uib-accordion",
+        "body": "<uib-accordion close-others=\"${1:true|false}\">\n\t<uib-accordion-group heading=\"${2:heading}\">\n\t\t${3:content}\n\t</uib-accordion-group>$4\n</uib-accordion>$5",
+        "description": "UI-Bootstrap Accordion",
+        "scope": ""
+    },
+    "UI-Bootstrap Accordion (All Properties)": {
+        "prefix": "uib-accordion-",
+        "body": "<uib-accordion close-others=\"${1:true|false}\">\n\t<uib-accordion-group is-open=\"${2:foo.isOpen}\" is-disabled=\"${3:foo.isDisabled}\" panel-class=\"panel-${4:default|primary|success|info|warning|danger}\"${5: template-url=\"my-template.html\"}>\n\t\t<uib-accordion-heading>\n\t\t\t${6:heading}\n\t\t</uib-accordion-heading>\n\t\t${7:content}\n\t</uib-accordion-group>$8\n</uib-accordion>$9",
+        "description": "UI-Bootstrap Accordion (All Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Accordion Group": {
+        "prefix": "uib-accordion-group",
+        "body": "<uib-accordion-group heading=\"${1:Heading}\" panel-class=\"panel-${2:default|primary|success|info|warning|danger}\"${3: template-url=\"my-template.html\"}>\n\t${4:Content}\n</uib-accordion-group>$5",
+        "description": "UI-Bootstrap Accordion Group",
+        "scope": ""
+    },
+    "UI-Bootstrap Accordion Heading": {
+        "prefix": "uib-accordion-heading",
+        "body": "<uib-accordion-heading>\n\t${1:My Heading}\n</uib-accordion-heading>$2",
+        "description": "UI-Bootstrap Accordion Heading",
+        "scope": ""
+    },
+    "UI-Bootstrap Alert": {
+        "prefix": "uib-alert",
+        "body": "<uib-alert type=\"${1:success|info|warning|danger}\" close=\"${2:closeAlert()}\">${3:Content}</uib-alert>$4",
+        "description": "UI-Bootstrap Alert",
+        "scope": ""
+    },
+    "UI-Bootstrap Button": {
+        "prefix": "uib-btn",
+        "body": "<button type=\"button\" class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-click=\"${2:click()}\">\n\t${3:Press Me Hard}\n</button>$4",
+        "description": "UI-Bootstrap Button",
+        "scope": ""
+    },
+    "UI-Bootstrap Button with Checkbox": {
+        "prefix": "uib-btn-checkbox",
+        "body": "<button type=\"button\" class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-checkbox btn-checkbox-true=\"${3:1}\" btn-checkbox-false=\"${4:0}\">\n\t${5:Press Me Hard}\n</button>$6",
+        "description": "UI-Bootstrap Button with Checkbox",
+        "scope": ""
+    },
+    "UI-Bootstrap Button Group (Checkboxes)": {
+        "prefix": "uib-btn-group-checkbox",
+        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1:default|primary|success|info|warning|danger}\" uib-btn-checkbox ng-model=\"${2:dasModel.first}\">${3:First}</label>\n\t<label class=\"btn btn-${4:default|primary|success|info|warning|danger}\" uib-btn-checkbox ng-model=\"${5:dasModel.second}\">${6:Second}</label>$7\n</div>$8",
+        "description": "UI-Bootstrap Button Group (Checkboxes)",
+        "scope": ""
+    },
+    "UI-Bootstrap Button Group (Radios)": {
+        "prefix": "uib-btn-group-radio",
+        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${3:First}'\"${4: uncheckable}>${5:First}</label>\n\t<label class=\"btn btn-${6:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${7:Second}'\"${4: uncheckable}>${8:Second}</label>$9\n</div>$10",
+        "description": "UI-Bootstrap Button Group (Radios)",
+        "scope": ""
+    },
+    "UI-Bootstrap Button Radio (Property)": {
+        "prefix": "uib-btn-radio",
+        "body": "uib-btn-radio=\"${1:value}\"",
+        "description": "UI-Bootstrap Button Radio (Property)",
+        "scope": ""
+    },
+    "UI-Bootstrap Carousel": {
+        "prefix": "uib-carousel",
+        "body": "<div uib-carousel active=\"${1:currentSlideIndex}\" interval=\"${2:3000}\">\n\t<div uib-slide index=\"${3:index}\">\n\t\t<img ng-src=\"{{${4:slideImage}}}\" style=\"margin: auto;\">\n\t\t<div class=\"carousel-caption\">\n\t\t\t<h4>${5:A Slide}</h4>\n\t\t\t<p>${6:The Slide Text}</p>\n\t\t</div>\n\t</div>\n</div>$7",
+        "description": "UI-Bootstrap Carousel",
+        "scope": ""
+    },
+    "UI-Bootstrap Carousel Slide": {
+        "prefix": "uib-slide",
+        "body": "<div uib-slide index=\"${1:index}\">\n\t<img ng-src=\"{{${2:slideImage}}}\" style=\"margin: auto;\">\n\t<div class=\"carousel-caption\">\n\t\t<h4>${3:A Slide}</h4>\n\t\t<p>${4:The Slide Text}</p>\n\t</div>\n</div>$5",
+        "description": "UI-Bootstrap Carousel Slide",
+        "scope": ""
+    },
+    "UI-Bootstrap Collapse": {
+        "prefix": "uib-collapse",
+        "body": "uib-collapse=\"${1:isCollapsed}\"",
+        "description": "UI-Bootstrap Collapse",
+        "scope": ""
+    },
+    "UI-Bootstrap Datepicker": {
+        "prefix": "uib-datepicker",
+        "body": "<uib-datepicker ng-model=\"${1:myDate}\" datepicker-options=\"${2:datepickerOptions}\"></uib-datepicker>$3",
+        "description": "UI-Bootstrap Datepicker",
+        "scope": ""
+    },
+    "UI-Bootstrap Datepicker Popup": {
+        "prefix": "uib-datepicker-popup",
+        "body": "<input type=\"text\" class=\"form-control\" uib-datepicker-popup=\"${1:yyyy-MM-dd}\" datepicker-options=\"${2:datepickerOptions}\" ng-model=\"${3:myDate}\" is-open=\"${4:isDatepickerOpen}\">$5",
+        "description": "UI-Bootstrap Datepicker Popup",
+        "scope": ""
+    },
+    "UI-Bootstrap Datepicker Popup (More Properties)": {
+        "prefix": "uib-datepicker-popup-",
+        "body": "<input type=\"text\" class=\"form-control\" uib-datepicker-popup=\"${1:yyyy-MM-dd}\" datepicker-options=\"${2:datepickerOptions}\" ng-model=\"${3:myDate}\" is-open=\"${4:isDatepickerOpen}\" current-text=\"${5:Today}\" clear-text=\"${6:Clear}\" close-text=\"${7:Done}\" close-on-date-selection=\"${8:true}\" on-open-focus=\"${9:true}\" show-button-bar=\"${10:true}\" popup-placement=\"${11:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\">$12",
+        "description": "UI-Bootstrap Datepicker Popup (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Dropdown": {
+        "prefix": "uib-dropdown",
+        "body": "<div class=\"btn-group\" uib-dropdown on-toggle=\"${1:toggledDropdown(open)}\" keyboard-nav>\n\t<button type=\"button\" class=\"btn btn-default\" uib-dropdown-toggle>\n\t\t${2:Open Dropdown} <span class=\"caret\"></span>\n\t</button>\n\t<ul class=\"dropdown-menu\" uib-dropdown-menu role=\"menu\">\n\t\t<li role=\"menuitem\">\n\t\t\t<a href>${3:Menu Item}</a>\n\t\t</li>\n\t\t${4:<li class=\"divider\"></li>}\n\t</ul>$5\n</div>$6",
+        "description": "UI-Bootstrap Dropdown",
+        "scope": ""
+    },
+    "UI-Bootstrap Dropdown (Split Button)": {
+        "prefix": "uib-dropdown-split",
+        "body": "<div class=\"btn-group\" uib-dropdown on-toggle=\"${1:toggledDropdown(open)}\" keyboard-nav>\n\t<button type=\"button\" class=\"btn btn-default\" ng-click=\"${2:click()}\">\n\t\t${3:Press Me Hard}\n\t</button>\n\t<button type=\"button\" class=\"btn btn-default\" uib-dropdown-toggle>\n\t\t<span class=\"caret\"></span>\n\t</button>\n\t<ul class=\"dropdown-menu\" uib-dropdown-menu role=\"menu\">\n\t\t<li role=\"menuitem\">\n\t\t\t<a href>${4:Menu Item}</a>\n\t\t</li>\n\t\t${5:<li class=\"divider\"></li>}\n\t</ul>\n</div>$6",
+        "description": "UI-Bootstrap Dropdown (Split Button)",
+        "scope": ""
+    },
+    "UI-Bootstrap Modal Template": {
+        "prefix": "uib-modal-template",
+        "body": "<div class=\"modal-header\">\n\t<button type=\"button\" class=\"close\" aria-label=\"Close\" ng-click=\"$dismiss()\">\n\t\t<span aria-hidden=\"true\">&times;</span>\n\t</button>\n\t<h4 class=\"modal-title\">${1:Modal Title}</h4>\n</div>\n<div class=\"modal-body\">\n\t${2:Modal Body}\n</div>\n<div class=\"modal-footer\">\n\t<button class=\"btn btn-default\" type=\"button\" ng-click=\"$dismiss()\">\n\t\tCancel\n\t</button>\n\t<button class=\"btn btn-primary\" type=\"button\" ng-click=\"${3:successCallback()}\">\n\t\t${4:OK}\n\t</button>\n</div>$5",
+        "description": "UI-Bootstrap Modal Template",
+        "scope": ""
+    },
+    "UI-Bootstrap Pager": {
+        "prefix": "uib-pager",
+        "body": "<uib-pager ng-model=\"${1:currentPage}\" total-items=\"${2:totalItems}\"></uib-pager>$3",
+        "description": "UI-Bootstrap Pager",
+        "scope": ""
+    },
+    "UI-Bootstrap Pager (More Properties)": {
+        "prefix": "uib-pager-",
+        "body": "<uib-pager ng-model=\"${1:currentPage}\" total-items=\"${2:totalItems}\" align=\"${3:true}\" items-per-page=\"${4:10}\" next-text=\"'${5:Next »}'\" previous-text=\"'${6:« Previous}'\" num-pages=\"${7:numPages}\"></uib-pager>$8",
+        "description": "UI-Bootstrap Pager (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Pagination": {
+        "prefix": "uib-pagination",
+        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-changed=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\">\n</uib-pagination>$4",
+        "description": "UI-Bootstrap Pagination",
+        "scope": ""
+    },
+    "UI-Bootstrap Pagination (More Properties)": {
+        "prefix": "uib-pagination-",
+        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-changed=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\"\n\titems-per-page=\"${4:10}\"\n\tmax-size=\"${5:5}\"\n\trotate=\"${6:true|false}\"\n\tforce-ellipses=\"${7:true|false}\"\n\tnum-pages=\"${8:numPages}\">\n</uib-pagination>$9",
+        "description": "UI-Bootstrap Pagination (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Popover": {
+        "prefix": "uib-popover",
+        "body": "uib-popover=\"${1:Popover Content}\" popover-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\"",
+        "description": "UI-Bootstrap Popover",
+        "scope": ""
+    },
+    "UI-Bootstrap Popover (More Properties)": {
+        "prefix": "uib-popover-",
+        "body": "uib-popover=\"${1:Popover Content}\" popover-title=\"${2:Popover Title}\" popover-placement=\"${3:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\" popover-is-open=\"${4:isPopoverOpen}\" popover-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\"",
+        "description": "UI-Bootstrap Popover (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Popover Template": {
+        "prefix": "uib-popover-template",
+        "body": "<div class=\"popover\" role=\"tooltip\">\n\t<div class=\"arrow\"></div>\n\t<h3 class=\"popover-title\">\n\t\t${1:Popover Title}\n\t</h3>\n\t<div class=\"popover-content\">\n\t\t${2:Popover Content}\n\t</div>\n</div>",
+        "description": "UI-Bootstrap Popover Template",
+        "scope": ""
+    },
+    "UI-Bootstrap Progressbar": {
+        "prefix": "uib-progressbar",
+        "body": "<uib-progressbar value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress-striped active}\" type=\"${4:success|info|warning|danger}\" animate=\"${5:true|false}\">\n\t${1:50}%\n</uib-progressbar>$6",
+        "description": "UI-Bootstrap Progressbar",
+        "scope": ""
+    },
+    "UI-Bootstrap Progressbar (Stacked)": {
+        "prefix": "uib-progressbar-stacked",
+        "body": "<uib-progress>\n\t<uib-bar value=\"${1:bar.value}\" type=\"${2:success|info|warning|danger}\">\n\t\t<span ng-hide=\"${1:bar.value} < 5\">{{${1:bar.value}}}%</span>\n\t</uib-bar>$3\n</uib-progress>$4",
+        "description": "UI-Bootstrap Progressbar (Stacked)",
+        "scope": ""
+    },
+    "UI-Bootstrap Bar (for Progressbars)": {
+        "prefix": "uib-bar",
+        "body": "<uib-bar value=\"${1:50}\" type=\"${2:success|info|warning|danger}\">\n\t${1:50}%\n</uib-bar>$3",
+        "description": "UI-Bootstrap Bar (for Progressbars)",
+        "scope": ""
+    },
+    "UI-Bootstrap Rating": {
+        "prefix": "uib-rating",
+        "body": "<uib-rating ng-model=\"${1:rating}\" max=\"${2:5}\" state-on=\"'${3:glyphicon-ok-sign}'\" state-off=\"'${4:glyphicon-ok-circle}'\" read-only=\"${5:false}\" on-hover=\"${6:hoverRating(value)}\" on-leave=\"${7:leftRating()}\"></uib-rating>\n<span class=\"label\">{{${1:rating}}}</span>$8",
+        "description": "UI-Bootstrap Rating",
+        "scope": ""
+    },
+    "UI-Bootstrap Tabset": {
+        "prefix": "uib-tabset",
+        "body": "<uib-tabset>\n\t<uib-tab heading=\"${1:Tab Heading}\" index=\"${2:0}\">\n\t\t${3:Tab Content}\n\t</uib-tab>$4\n</uib-tabset>$5",
+        "description": "UI-Bootstrap Tabset",
+        "scope": ""
+    },
+    "UI-Bootstrap Tabset (More Properties)": {
+        "prefix": "uib-tabset-",
+        "body": "<uib-tabset active=\"${1:0}\" type=\"${2:tabs|pills}\" vertical=\"${3:true|false}\" justified=\"${4:true|false}\">\n\t<uib-tab heading=\"${5:Tab Heading}\" index=\"${6:0}\">\n\t\t${7:Tab Content}\n\t</uib-tab>$8\n</uib-tabset>$9",
+        "description": "UI-Bootstrap Tabset (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Tab": {
+        "prefix": "uib-tab",
+        "body": "<uib-tab heading=\"${1:Tab Heading}\" index=\"${2:0}\">\n\t${3:Tab Content}\n</uib-tab>$4",
+        "description": "UI-Bootstrap Tab",
+        "scope": ""
+    },
+    "UI-Bootstrap Tab (More Properties)": {
+        "prefix": "uib-tab-",
+        "body": "<uib-tab heading=\"${1:Tab Heading}\" index=\"${2:0}\" active=\"${3:tab.active}\" disable=\"${4:tab.disabled}\" select=\"${5:tabSelected()}\" deselect=\"${6:tabDeselected()}\">\n\t<uib-tab-heading>\n\t\t${7:Tab Heading}\n\t</uib-tab-heading>\n\t${8: Tab Content}\n</uib-tab>$9",
+        "description": "UI-Bootstrap Tab (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Tab Heading": {
+        "prefix": "uib-tab-heading",
+        "body": "<uib-tab-heading>\n\t${1:Tab Heading}\n</uib-tab-heading>$2",
+        "description": "UI-Bootstrap Tab Heading",
+        "scope": ""
+    },
+    "UI-Bootstrap Timepicker": {
+        "prefix": "uib-timepicker",
+        "body": "<uib-timepicker ng-model=\"${1:myTime}\" ng-change=\"${2:changedTime()}\" hour-step=\"${3:1}\" minute-step=\"${4:1}\" show-seconds=\"${5:false}\" show-meridian=\"${6:true}\" show-spinners=\"${7:true}\"></uib-timepicker>$8",
+        "description": "UI-Bootstrap Timepicker",
+        "scope": ""
+    },
+    "UI-Bootstrap Tooltip": {
+        "prefix": "uib-tooltip",
+        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\"",
+        "description": "UI-Bootstrap Tooltip",
+        "scope": ""
+    },
+    "UI-Bootstrap Tooltip (More Properties)": {
+        "prefix": "uib-tooltip-",
+        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\" tooltip-enable=\"${3:true|false}\" tooltip-is-open=\"${4:isTooltipOpen}\" tooltip-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\" tooltip-animation=\"${6:true|false}\" tooltip-append-to-body=\"${7:true|false}\" tooltip-popup-delay=\"${8:1000}\" tooltip-popup-close-delay=\"${9:1000}\"",
+        "description": "UI-Bootstrap Tooltip (More Properties)",
+        "scope": ""
+    },
+    "UI-Bootstrap Typeahead": {
+        "prefix": "uib-typeahead",
+        "body": "<input type=\"text\" ng-model=\"${1:selected}\" uib-typeahead=\"${2:state} for ${2:state} in ${3:states} | filter:$viewValue | limitTo:${4:5}\" class=\"form-control\">",
+        "description": "UI-Bootstrap Typeahead",
+        "scope": ""
+    },
+    "Template URL": {
+        "prefix": "template-url",
+        "body": "template-url=\"$1\"$2",
+        "description": "Template URL",
+        "scope": ""
+    }
+}

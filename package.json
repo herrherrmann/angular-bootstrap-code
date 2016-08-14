@@ -1,0 +1,25 @@
+{
+    "name": "angular-bootstrap",
+    "displayName": "Angular UI Bootstrap Snippets",
+    "description": "Angular UI Bootstrap Snippets for VS Code (HTML and JS)",
+    "version": "1.0.0",
+    "publisher": "HerrHerrmann",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html-snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js-snippets.json"
+            }
+        ]
+    }
+}
