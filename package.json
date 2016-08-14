@@ -2,8 +2,13 @@
     "name": "angular-bootstrap",
     "displayName": "Angular UI Bootstrap Snippets",
     "description": "Angular UI Bootstrap Snippets for VS Code (HTML and JS)",
-    "version": "1.0.0",
+    "version": "4.0.1",
+    "icon": "images/icon.png",
     "publisher": "HerrHerrmann",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/herrherrmann/angular-bootstrap-code.git"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
