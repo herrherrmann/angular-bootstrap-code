@@ -127,13 +127,13 @@
     },
     "UI-Bootstrap Pagination": {
         "prefix": "uib-pagination",
-        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-changed=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\">\n</uib-pagination>$4",
+        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-change=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\">\n</uib-pagination>$4",
         "description": "UI-Bootstrap Pagination",
         "scope": ""
     },
     "UI-Bootstrap Pagination (More Properties)": {
         "prefix": "uib-pagination-",
-        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-changed=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\"\n\titems-per-page=\"${4:10}\"\n\tmax-size=\"${5:5}\"\n\trotate=\"${6:true|false}\"\n\tforce-ellipses=\"${7:true|false}\"\n\tnum-pages=\"${8:numPages}\">\n</uib-pagination>$9",
+        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-change=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\"\n\titems-per-page=\"${4:10}\"\n\tmax-size=\"${5:5}\"\n\trotate=\"${6:true|false}\"\n\tforce-ellipses=\"${7:true|false}\"\n\tnum-pages=\"${8:numPages}\">\n</uib-pagination>$9",
         "description": "UI-Bootstrap Pagination (More Properties)",
         "scope": ""
     },
