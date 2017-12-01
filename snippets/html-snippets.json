@@ -1,19 +1,19 @@
 {
     "UI-Bootstrap Accordion": {
         "prefix": "uib-accordion",
-        "body": "<uib-accordion close-others=\"${1:true|false}\">\n\t<uib-accordion-group heading=\"${2:heading}\">\n\t\t${3:content}\n\t</uib-accordion-group>$4\n</uib-accordion>$5",
+        "body": "<uib-accordion close-others=\"${1|true,false|}\">\n\t<uib-accordion-group heading=\"${2:heading}\">\n\t\t${3:content}\n\t</uib-accordion-group>$4\n</uib-accordion>$5",
         "description": "UI-Bootstrap Accordion",
         "scope": ""
     },
     "UI-Bootstrap Accordion (All Properties)": {
         "prefix": "uib-accordion-",
-        "body": "<uib-accordion close-others=\"${1:true|false}\">\n\t<uib-accordion-group is-open=\"${2:foo.isOpen}\" is-disabled=\"${3:foo.isDisabled}\" panel-class=\"panel-${4:default|primary|success|info|warning|danger}\"${5: template-url=\"my-template.html\"}>\n\t\t<uib-accordion-heading>\n\t\t\t${6:heading}\n\t\t</uib-accordion-heading>\n\t\t${7:content}\n\t</uib-accordion-group>$8\n</uib-accordion>$9",
+        "body": "<uib-accordion close-others=\"${1|true,false|}\">\n\t<uib-accordion-group is-open=\"${2:foo.isOpen}\" is-disabled=\"${3:foo.isDisabled}\" panel-class=\"panel-${4|default,primary,success,info,warning,danger|}\"${5: template-url=\"my-template.html\"}>\n\t\t<uib-accordion-heading>\n\t\t\t${6:heading}\n\t\t</uib-accordion-heading>\n\t\t${7:content}\n\t</uib-accordion-group>$8\n</uib-accordion>$9",
         "description": "UI-Bootstrap Accordion (All Properties)",
         "scope": ""
     },
     "UI-Bootstrap Accordion Group": {
         "prefix": "uib-accordion-group",
-        "body": "<uib-accordion-group heading=\"${1:Heading}\" panel-class=\"panel-${2:default|primary|success|info|warning|danger}\"${3: template-url=\"my-template.html\"}>\n\t${4:Content}\n</uib-accordion-group>$5",
+        "body": "<uib-accordion-group heading=\"${1:Heading}\" panel-class=\"panel-${2|default,primary,success,info,warning,danger|}\"${3: template-url=\"my-template.html\"}>\n\t${4:Content}\n</uib-accordion-group>$5",
         "description": "UI-Bootstrap Accordion Group",
         "scope": ""
     },
@@ -25,31 +25,31 @@
     },
     "UI-Bootstrap Alert": {
         "prefix": "uib-alert",
-        "body": "<uib-alert type=\"${1:success|info|warning|danger}\" close=\"${2:closeAlert()}\">${3:Content}</uib-alert>$4",
+        "body": "<uib-alert type=\"${1|success,info,warning,danger|}\" close=\"${2:closeAlert()}\">${3:Content}</uib-alert>$4",
         "description": "UI-Bootstrap Alert",
         "scope": ""
     },
     "UI-Bootstrap Button": {
         "prefix": "uib-btn",
-        "body": "<button type=\"button\" class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-click=\"${2:click()}\">\n\t${3:Press Me Hard}\n</button>$4",
+        "body": "<button type=\"button\" class=\"btn btn-${1|default,primary,success,info,warning,danger|}\" ng-click=\"${2:click()}\">\n\t${3:Press Me Hard}\n</button>$4",
         "description": "UI-Bootstrap Button",
         "scope": ""
     },
     "UI-Bootstrap Button with Checkbox": {
         "prefix": "uib-btn-checkbox",
-        "body": "<button type=\"button\" class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-checkbox btn-checkbox-true=\"${3:1}\" btn-checkbox-false=\"${4:0}\">\n\t${5:Press Me Hard}\n</button>$6",
+        "body": "<button type=\"button\" class=\"btn btn-${1|default,primary,success,info,warning,danger|}\" ng-model=\"${2:dasModel}\" uib-btn-checkbox btn-checkbox-true=\"${3:1}\" btn-checkbox-false=\"${4:0}\">\n\t${5:Press Me Hard}\n</button>$6",
         "description": "UI-Bootstrap Button with Checkbox",
         "scope": ""
     },
     "UI-Bootstrap Button Group (Checkboxes)": {
         "prefix": "uib-btn-group-checkbox",
-        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1:default|primary|success|info|warning|danger}\" uib-btn-checkbox ng-model=\"${2:dasModel.first}\">${3:First}</label>\n\t<label class=\"btn btn-${4:default|primary|success|info|warning|danger}\" uib-btn-checkbox ng-model=\"${5:dasModel.second}\">${6:Second}</label>$7\n</div>$8",
+        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1|default,primary,success,info,warning,danger|}\" uib-btn-checkbox ng-model=\"${2:dasModel.first}\">${3:First}</label>\n\t<label class=\"btn btn-${4|default,primary,success,info,warning,danger|}\" uib-btn-checkbox ng-model=\"${5:dasModel.second}\">${6:Second}</label>$7\n</div>$8",
         "description": "UI-Bootstrap Button Group (Checkboxes)",
         "scope": ""
     },
     "UI-Bootstrap Button Group (Radios)": {
         "prefix": "uib-btn-group-radio",
-        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${3:First}'\"${4: uncheckable}>${5:First}</label>\n\t<label class=\"btn btn-${6:default|primary|success|info|warning|danger}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${7:Second}'\"${4: uncheckable}>${8:Second}</label>$9\n</div>$10",
+        "body": "<div class=\"btn-group\">\n\t<label class=\"btn btn-${1|default,primary,success,info,warning,danger|}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${3:First}'\"${4: uncheckable}>${5:First}</label>\n\t<label class=\"btn btn-${6|default,primary,success,info,warning,danger|}\" ng-model=\"${2:dasModel}\" uib-btn-radio=\"'${7:Second}'\"${4: uncheckable}>${8:Second}</label>$9\n</div>$10",
         "description": "UI-Bootstrap Button Group (Radios)",
         "scope": ""
     },
@@ -91,7 +91,7 @@
     },
     "UI-Bootstrap Datepicker Popup (More Properties)": {
         "prefix": "uib-datepicker-popup-",
-        "body": "<input type=\"text\" class=\"form-control\" uib-datepicker-popup=\"${1:yyyy-MM-dd}\" datepicker-options=\"${2:datepickerOptions}\" ng-model=\"${3:myDate}\" is-open=\"${4:isDatepickerOpen}\" current-text=\"${5:Today}\" clear-text=\"${6:Clear}\" close-text=\"${7:Done}\" close-on-date-selection=\"${8:true}\" on-open-focus=\"${9:true}\" show-button-bar=\"${10:true}\" popup-placement=\"${11:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\">$12",
+        "body": "<input type=\"text\" class=\"form-control\" uib-datepicker-popup=\"${1:yyyy-MM-dd}\" datepicker-options=\"${2:datepickerOptions}\" ng-model=\"${3:myDate}\" is-open=\"${4:isDatepickerOpen}\" current-text=\"${5:Today}\" clear-text=\"${6:Clear}\" close-text=\"${7:Done}\" close-on-date-selection=\"${8:true}\" on-open-focus=\"${9:true}\" show-button-bar=\"${10:true}\" popup-placement=\"${11|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\">$12",
         "description": "UI-Bootstrap Datepicker Popup (More Properties)",
         "scope": ""
     },
@@ -133,19 +133,19 @@
     },
     "UI-Bootstrap Pagination (More Properties)": {
         "prefix": "uib-pagination-",
-        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-change=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\"\n\titems-per-page=\"${4:10}\"\n\tmax-size=\"${5:5}\"\n\trotate=\"${6:true|false}\"\n\tforce-ellipses=\"${7:true|false}\"\n\tnum-pages=\"${8:numPages}\">\n</uib-pagination>$9",
+        "body": "<uib-pagination\n\tng-model=\"${1:currentPage}\"\n\tng-change=\"${2:changedPage()}\"\n\ttotal-items=\"${3:myItems.length}\"\n\titems-per-page=\"${4:10}\"\n\tmax-size=\"${5:5}\"\n\trotate=\"${6|true,false|}\"\n\tforce-ellipses=\"${7|true,false|}\"\n\tnum-pages=\"${8:numPages}\">\n</uib-pagination>$9",
         "description": "UI-Bootstrap Pagination (More Properties)",
         "scope": ""
     },
     "UI-Bootstrap Popover": {
         "prefix": "uib-popover",
-        "body": "uib-popover=\"${1:Popover Content}\" popover-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\"",
+        "body": "uib-popover=\"${1:Popover Content}\" popover-placement=\"${2|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\"",
         "description": "UI-Bootstrap Popover",
         "scope": ""
     },
     "UI-Bootstrap Popover (More Properties)": {
         "prefix": "uib-popover-",
-        "body": "uib-popover=\"${1:Popover Content}\" popover-title=\"${2:Popover Title}\" popover-placement=\"${3:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\" popover-is-open=\"${4:isPopoverOpen}\" popover-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\"",
+        "body": "uib-popover=\"${1:Popover Content}\" popover-title=\"${2:Popover Title}\" popover-placement=\"${3|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" popover-is-open=\"${4:isPopoverOpen}\" popover-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\"",
         "description": "UI-Bootstrap Popover (More Properties)",
         "scope": ""
     },
@@ -157,19 +157,19 @@
     },
     "UI-Bootstrap Progressbar": {
         "prefix": "uib-progressbar",
-        "body": "<uib-progressbar value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress-striped active}\" type=\"${4:success|info|warning|danger}\" animate=\"${5:true|false}\">\n\t${1:50}%\n</uib-progressbar>$6",
+        "body": "<uib-progressbar value=\"${1:50}\" max=\"${2:100}\" class=\"${3:progress-striped active}\" type=\"${4|success,info,warning,danger|}\" animate=\"${5|true,false|}\">\n\t${1:50}%\n</uib-progressbar>$6",
         "description": "UI-Bootstrap Progressbar",
         "scope": ""
     },
     "UI-Bootstrap Progressbar (Stacked)": {
         "prefix": "uib-progressbar-stacked",
-        "body": "<uib-progress>\n\t<uib-bar value=\"${1:bar.value}\" type=\"${2:success|info|warning|danger}\">\n\t\t<span ng-hide=\"${1:bar.value} < 5\">{{${1:bar.value}}}%</span>\n\t</uib-bar>$3\n</uib-progress>$4",
+        "body": "<uib-progress>\n\t<uib-bar value=\"${1:bar.value}\" type=\"${2|success,info,warning,danger|}\">\n\t\t<span ng-hide=\"${1:bar.value} < 5\">{{${1:bar.value}}}%</span>\n\t</uib-bar>$3\n</uib-progress>$4",
         "description": "UI-Bootstrap Progressbar (Stacked)",
         "scope": ""
     },
     "UI-Bootstrap Bar (for Progressbars)": {
         "prefix": "uib-bar",
-        "body": "<uib-bar value=\"${1:50}\" type=\"${2:success|info|warning|danger}\">\n\t${1:50}%\n</uib-bar>$3",
+        "body": "<uib-bar value=\"${1:50}\" type=\"${2|success,info,warning,danger|}\">\n\t${1:50}%\n</uib-bar>$3",
         "description": "UI-Bootstrap Bar (for Progressbars)",
         "scope": ""
     },
@@ -187,7 +187,7 @@
     },
     "UI-Bootstrap Tabset (More Properties)": {
         "prefix": "uib-tabset-",
-        "body": "<uib-tabset active=\"${1:0}\" type=\"${2:tabs|pills}\" vertical=\"${3:true|false}\" justified=\"${4:true|false}\">\n\t<uib-tab heading=\"${5:Tab Heading}\" index=\"${6:0}\">\n\t\t${7:Tab Content}\n\t</uib-tab>$8\n</uib-tabset>$9",
+        "body": "<uib-tabset active=\"${1:0}\" type=\"${2|tabs,pills|}\" vertical=\"${3|true,false|}\" justified=\"${4|true,false|}\">\n\t<uib-tab heading=\"${5:Tab Heading}\" index=\"${6:0}\">\n\t\t${7:Tab Content}\n\t</uib-tab>$8\n</uib-tabset>$9",
         "description": "UI-Bootstrap Tabset (More Properties)",
         "scope": ""
     },
@@ -217,13 +217,13 @@
     },
     "UI-Bootstrap Tooltip": {
         "prefix": "uib-tooltip",
-        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\"",
+        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2:|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\"",
         "description": "UI-Bootstrap Tooltip",
         "scope": ""
     },
     "UI-Bootstrap Tooltip (More Properties)": {
         "prefix": "uib-tooltip-",
-        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2:top|top-left|top-right|bottom|bottom-left|bottom-right|left|left-top|left-bottom|right|right-top|right-bottom}\" tooltip-enable=\"${3:true|false}\" tooltip-is-open=\"${4:isTooltipOpen}\" tooltip-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\" tooltip-animation=\"${6:true|false}\" tooltip-append-to-body=\"${7:true|false}\" tooltip-popup-delay=\"${8:1000}\" tooltip-popup-close-delay=\"${9:1000}\"",
+        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" tooltip-enable=\"${3|true,false|}\" tooltip-is-open=\"${4:isTooltipOpen}\" tooltip-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\" tooltip-animation=\"${6|true,false|}\" tooltip-append-to-body=\"${7|true,false|}\" tooltip-popup-delay=\"${8:1000}\" tooltip-popup-close-delay=\"${9:1000}\"",
         "description": "UI-Bootstrap Tooltip (More Properties)",
         "scope": ""
     },
