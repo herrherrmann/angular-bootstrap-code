@@ -145,7 +145,7 @@
     },
     "UI-Bootstrap Popover (More Properties)": {
         "prefix": "uib-popover-",
-        "body": "uib-popover=\"${1:Popover Content}\" popover-title=\"${2:Popover Title}\" popover-placement=\"${3|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" popover-is-open=\"${4:isPopoverOpen}\" popover-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\"",
+        "body": "uib-popover=\"${1:Popover Content}\" popover-title=\"${2:Popover Title}\" popover-placement=\"${3|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" popover-is-open=\"${4:isPopoverOpen}\" popover-trigger=\"${5|click,mouseenter,outsideClick,focus,none|}\"",
         "description": "UI-Bootstrap Popover (More Properties)",
         "scope": ""
     },
@@ -223,7 +223,7 @@
     },
     "UI-Bootstrap Tooltip (More Properties)": {
         "prefix": "uib-tooltip-",
-        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" tooltip-enable=\"${3|true,false|}\" tooltip-is-open=\"${4:isTooltipOpen}\" tooltip-trigger=\"${5:click|mouseenter|outsideClick|focus|none}\" tooltip-animation=\"${6|true,false|}\" tooltip-append-to-body=\"${7|true,false|}\" tooltip-popup-delay=\"${8:1000}\" tooltip-popup-close-delay=\"${9:1000}\"",
+        "body": "uib-tooltip=\"${1:A Tooltip.}\" tooltip-placement=\"${2|top,top-left,top-right,bottom,bottom-left,bottom-right,left,left-top,left-bottom,right,right-top,right-bottom|}\" tooltip-enable=\"${3|true,false|}\" tooltip-is-open=\"${4:isTooltipOpen}\" tooltip-trigger=\"${5|click,mouseenter,outsideClick,focus,none|}\" tooltip-animation=\"${6|true,false|}\" tooltip-append-to-body=\"${7|true,false|}\" tooltip-popup-delay=\"${8:1000}\" tooltip-popup-close-delay=\"${9:1000}\"",
         "description": "UI-Bootstrap Tooltip (More Properties)",
         "scope": ""
     },
