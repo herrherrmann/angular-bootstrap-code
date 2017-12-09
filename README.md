@@ -16,7 +16,11 @@ In any HTML or JavaScript file simply start typing `uib-` and you'll see auto-co
 
 ![uib-modal js snippet in action](https://raw.githubusercontent.com/herrherrmann/angular-bootstrap-code/master/images/uib-modal-js-demo.gif)
 
-## Release Notes
+## Changelog
+
+### 4.0.7
+
+- restructured properties to choices (thanks dawnb!)
 
 ### 4.0.6
 
