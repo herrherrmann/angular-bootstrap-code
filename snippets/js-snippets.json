@@ -1,7 +1,7 @@
 {
     "UI-Bootstrap Datepicker Options": {
         "prefix": "uib-datepicker-options",
-        "body": "{\n\tdatepickerMode: ${1:'day|month|year'},\n\tshowWeeks: ${2:true},\n\tstartingDay: ${3:0}, // (0=Sunday, ..., 6=Saturday)\n\tminDate: ${4:null}, // must be JS Date\n\tmaxDate: ${5:null}, // must be JS Date\n\tinitDate: ${6:null}, // must be JS Date\n\tcustomClass: ${7:getCustomClass},\n\tdateDisabled: ${8:isDateDisabled}\n}",
+        "body": "{\n\tdatepickerMode: '${1|day,month,year|}',\n\tshowWeeks: ${2|true,false|},\n\tstartingDay: ${3:0}, // (0=Sunday, ..., 6=Saturday)\n\tminDate: ${4:null}, // must be JS Date\n\tmaxDate: ${5:null}, // must be JS Date\n\tinitDate: ${6:null}, // must be JS Date\n\tcustomClass: ${7:getCustomClass},\n\tdateDisabled: ${8:isDateDisabled}\n}",
         "description": "UI-Bootstrap Datepicker Options"
     },
     "UI-Bootstrap Dateparser": {
@@ -11,17 +11,17 @@
     },
     "UI-Bootstrap Modal Open": {
         "prefix": "uib-modal-open",
-        "body": "$uibModal.open({\n\ttemplateUrl: '${1:modal.html}',\n\tcontroller: '${2:ModalCtrl}',\n\tanimation: ${3:true},\n\tsize: '${4:lg|sm}',\n\tresolve: {\n\t\t${5:items}: function () {\n\t\t\treturn $scope.items;\n\t\t}\n\t}\n}).result\n.then(function (${6:selectedItem}) {\n\t$7\n})\n.catch(function () {\n\t${8:// Modal dismissed.}\n});$9",
+        "body": "$$uibModal.open({\n\ttemplateUrl: '${1:modal.html}',\n\tcontroller: '${2:ModalCtrl}',\n\tanimation: ${3|true,false|},\n\tsize: '${4|lg,sm|}',\n\tresolve: {\n\t\t${5:items}: function () {\n\t\t\treturn $scope.items;\n\t\t}\n\t}\n}).result\n.then(function (${6:selectedItem}) {\n\t$7\n})\n.catch(function () {\n\t${8:// Modal dismissed.}\n});$9",
         "description": "UI-Bootstrap Modal Open"
     },
     "UI-Bootstrap Modal Dismiss": {
         "prefix": "$dismiss",
-        "body": "$dismiss(${1:reason})",
+        "body": "$$dismiss(${1:reason})",
         "description": "UI-Bootstrap Modal Dismiss"
     },
     "UI-Bootstrap Modal Close": {
         "prefix": "$close",
-        "body": "$close(${1:result})",
+        "body": "$$close(${1:result})",
         "description": "UI-Bootstrap Modal Close"
     }
 }
